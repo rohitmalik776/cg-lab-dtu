@@ -82,7 +82,7 @@ def rotate(x: list, y: list, angle: float):
     n = len(x)
     x_new = [x[i] * math.cos(angle) - y[i] * math.sin(angle) for i in range(n)]
     y_new = [x[i] * math.sin(angle) + y[i] * math.cos(angle) for i in range(n)]
-    draw_polygon(x, y, x_new, y_new, n)
+    draw_polygon(x, y, x_new, y_new, n, True)
 
 
 def reflect(x: list, y: list, is_x: bool):
@@ -124,7 +124,7 @@ elif choice == 3:
     rotate(x, y, angle)
 else:
     about_x = int(
-        input("0: rotation about y-axis\n1: rotation about x-axis\nEnter choice:")
+        input("0: reflection about y-axis\n1: reflection about x-axis\nEnter choice:")
     )
     is_x = about_x == 1
     reflect(x, y, is_x)

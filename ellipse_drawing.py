@@ -6,6 +6,8 @@ def plot(x: list, y: list):
     plt.xlabel('x - axis')
     plt.ylabel('y - axis')
     plt.title('Ellipse drawing algorithm')
+    plt.xlim([-80, 80])
+    plt.ylim([-80, 80])
     plt.show()
 
 

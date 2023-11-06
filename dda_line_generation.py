@@ -7,6 +7,8 @@ def plot(x: list, y: list):
     plt.xlabel('x - axis')
     plt.ylabel('y - axis')
     plt.title('DDA Line generating algorithm')
+    plt.xlim([0, 120])
+    plt.ylim([0, 120])
     plt.show()
 
 
